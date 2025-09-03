@@ -11,19 +11,21 @@ public class Ejercicio9 {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         System.out.print("Ingrese el precio del producto: ");
-        double precio = sc.nextDouble();
+        double precio = input.nextDouble();
         System.out.print("Ingrese el peso en kg: ");
-        double peso = sc.nextDouble();
-        sc.nextLine(); 
+        double peso = input.nextDouble();
+        input.nextLine(); 
         System.out.print("Ingrese la zona de envío (Nacional/Internacional): ");
-        String zona = sc.nextLine();
+        String zona = input.nextLine();
 
         double envio = calcularCostoEnvio(peso, zona);
         double total = calcularTotalCompra(precio, envio);
 
         System.out.println("El costo de envío es: " + envio);
         System.out.println("El total a pagar es: " + total);
+        
+        input.close();
     }
 }

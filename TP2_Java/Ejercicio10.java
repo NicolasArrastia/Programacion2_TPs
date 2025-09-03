@@ -6,15 +6,17 @@ public class Ejercicio10 {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         System.out.print("Stock actual: ");
-        int stock = sc.nextInt();
+        int stock = input.nextInt();
         System.out.print("Cantidad vendida: ");
-        int vendida = sc.nextInt();
+        int vendida = input.nextInt();
         System.out.print("Cantidad recibida: ");
-        int recibida = sc.nextInt();
+        int recibida = input.nextInt();
 
         int nuevo = actualizarStock(stock, vendida, recibida);
         System.out.println("El nuevo stock del producto es: " + nuevo);
+
+        input.close();
     }
 }

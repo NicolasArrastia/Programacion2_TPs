@@ -12,9 +12,11 @@ public class Ejercicio11 {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         System.out.print("Ingrese el precio del producto: ");
-        double precio = sc.nextDouble();
+        double precio = input.nextDouble();
         calcularDescuentoEspecial(precio);
+
+        input.close();
     }
 }

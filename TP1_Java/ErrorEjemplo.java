@@ -6,5 +6,7 @@ public class ErrorEjemplo {
         System.out.print("Ingresa tu nombre: ");
         String nombre = input.nextLine(); // Cambiado de nextInt() a nextLine()
         System.out.println("Hola, " + nombre);
+
+        input.close();
     }
 }

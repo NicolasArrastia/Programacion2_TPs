@@ -2,15 +2,17 @@ import java.util.Scanner;
 
 public class Ejercicio2 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         System.out.print("Ingrese el primer número: ");
-        int a = sc.nextInt();
+        int a = input.nextInt();
         System.out.print("Ingrese el segundo número: ");
-        int b = sc.nextInt();
+        int b = input.nextInt();
         System.out.print("Ingrese el tercer número: ");
-        int c = sc.nextInt();
+        int c = input.nextInt();
 
         int mayor = (a > b && a > c) ? a : (b > c ? b : c);
         System.out.println("El mayor es: " + mayor);
+
+        input.close();
     }
 }

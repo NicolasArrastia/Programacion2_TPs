@@ -12,5 +12,7 @@ public class EntradaUsuario  {
 
         System.out.println("Nombre: " + nombre);
         System.out.println("Edad: " + edad);
+
+        input.close();
     }
 }

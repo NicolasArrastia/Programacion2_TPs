@@ -14,5 +14,7 @@ public class Operaciones {
         System.out.println("Resta: " + (num1 - num2));
         System.out.println("Multiplicación: " + (num1 * num2));
         System.out.println("División: " + (num1 / num2));
+
+        input.close();
     }
 }
